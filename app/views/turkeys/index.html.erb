@@ -1,0 +1,10 @@
+<h1>I am the index.html.erb</h1>
+
+
+
+<% @turkeys.each do |turkey| %>
+  <h1>name: <%= turkey.name %></h1>
+  <p>number_of_gobbles: <%= turkey.number_of_gobbles %></p>
+  <p>weight: <%= turkey.weight %></p>
+  <hr>
+<% end %>
