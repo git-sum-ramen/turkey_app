@@ -20,7 +20,8 @@ class TurkeysController < ApplicationController
       name: params[:name],
     )
     @turkey.save
-    render 'show.html.erb'
+    # render 'show.html.erb'
+    redirect_to "/turkeys/#{@turkey.id}"
   end
 end
 
