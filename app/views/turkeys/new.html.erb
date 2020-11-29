@@ -5,5 +5,6 @@
   <p>Name: <input type="text" name="name"></p>
   <p>Weight: <input type="text" name="weight"></p>
   <p>Gobble count: <input type="text" name="number_of_gobbles"></p>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <p><input type="submit" value="Make a turkey"></p>
 </form>

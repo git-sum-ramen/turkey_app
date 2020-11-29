@@ -12,5 +12,15 @@ class TurkeysController < ApplicationController
   def new
     render 'new.html.erb'
   end
+
+  def create
+    @turkey = Turkey.new(
+      weight: params[:weight],
+      number_of_gobbles: params[:number_of_gobbles],
+      name: params[:name],
+    )
+    @turkey.save
+    render 'show.html.erb'
+  end
 end
 

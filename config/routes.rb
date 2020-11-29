@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get "/turkeys" => "turkeys#index"
   get "/turkeys/new" => "turkeys#new"
   get "/turkeys/:id" => "turkeys#show"
+  post "/turkeys" => "turkeys#create"
 end
