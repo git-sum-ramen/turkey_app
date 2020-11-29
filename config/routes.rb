@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   # end
 
   get "/turkeys" => "turkeys#index"
+  get "/turkeys/:id" => "turkeys#show"
 end

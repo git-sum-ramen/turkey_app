@@ -3,8 +3,8 @@
 
 
 <% @turkeys.each do |turkey| %>
-  <h1>name: <%= turkey.name %></h1>
+  
+  <h1>name: <a href="/turkeys/<%= turkey.id %>"><%= turkey.name %></a></h1>
   <p>number_of_gobbles: <%= turkey.number_of_gobbles %></p>
-  <p>weight: <%= turkey.weight %></p>
   <hr>
 <% end %>
